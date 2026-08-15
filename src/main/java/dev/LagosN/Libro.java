@@ -1,28 +1,33 @@
 package dev.LagosN;
 
+import java.util.ArrayList;
+
 public class Libro {
     private String titulo;
     private int anno;
     private String autor;
-    private int id;
+    private int run;
 
     public Libro(){
         this.titulo = "Sin definir";
         this.anno = 0;
         this.autor = "Anonimo";
-        this.id = 0;
+        this.run = 0;
 
 
     }
-    public Libro(String titulo, int anno, String autor, int id){
+    public Libro(String titulo, int anno, String autor, int run){
         this.titulo = titulo;
         this.anno = anno;
         this.autor = autor;
-        this.id = id ;
+        this.run = run ;
     }
 
-    public boolean prestamo(String prestamo){
-        return true;
+    public boolean prestamo(int run, String titulo){
+
+       ArrayList<String> lista= new ArrayList<>() ;
+       lista.add(titulo);
+       lista.add(run);
 
     }
     public boolean disponibilidad(){

@@ -4,20 +4,20 @@ public class Prestamo {
     private String estudiante;
     private int fechaInicio;
     private int fechaTermino;
-    private int librosPrestados;
+    private String nombreLibro;
 
     public Prestamo(){
         this.estudiante = "";
         this.fechaInicio = 0;
         this.fechaTermino = 0;
-        this.librosPrestados =0;
+        this.nombreLibro ="";
 
     }
-    public Prestamo(int estudiante, int fechaInicio, int fechaTermino, int librosPrestados){
+    public Prestamo(String estudiante, int fechaInicio, int fechaTermino, String nombreLibro){
         this.estudiante = estudiante;
         this.fechaInicio = fechaInicio;
         this.fechaTermino = fechaTermino;
-        this.librosPrestados =librosPrestados;
+        this.nombreLibro =nombreLibro;
 
     }
     public boolean devolver(int fechaTermino,String estudiante ){

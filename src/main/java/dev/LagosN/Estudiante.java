@@ -23,5 +23,6 @@ public class Estudiante {
     }
     public boolean notas(int promedio, int alumnosCurso){
         float notas = (float) promedio/ alumnosCurso;
+
     }
 }
