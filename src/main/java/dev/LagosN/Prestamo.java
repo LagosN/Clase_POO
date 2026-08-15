@@ -1,13 +1,13 @@
 package dev.LagosN;
 
 public class Prestamo {
-    private int estudiante;
+    private String estudiante;
     private int fechaInicio;
     private int fechaTermino;
     private int librosPrestados;
 
     public Prestamo(){
-        this.estudiante = 0;
+        this.estudiante = "";
         this.fechaInicio = 0;
         this.fechaTermino = 0;
         this.librosPrestados =0;
@@ -20,7 +20,7 @@ public class Prestamo {
         this.librosPrestados =librosPrestados;
 
     }
-    public boolean devolver(String devolver){
+    public boolean devolver(int fechaTermino,String estudiante ){
         return true;
     }
     public boolean prestar(String prestar){
