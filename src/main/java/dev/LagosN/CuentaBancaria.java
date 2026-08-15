@@ -7,16 +7,16 @@ public class CuentaBancaria {
     private String tipoCuenta;
 
     public CuentaBancaria(){
-        String nombre = "";
-        int run = 0;
-        int numeroCuenta;
-        String tipoCuenta;
+        this.nombre = "";
+        this.run = 0;
+        this.numeroCuenta = 0;
+        this.tipoCuenta = "";
     }
     public CuentaBancaria(String nombre, int run, int numeroCuenta, String tipoCuenta){
-        String nombre = nombre;
-        int run = run;
-        int numeroCuenta = numeroCuenta;
-        String tipoCuenta = tipoCuenta;
+        this.nombre = nombre;
+        this.run = run;
+        this.numeroCuenta = numeroCuenta;
+        this.tipoCuenta = tipoCuenta;
 
     }
     public boolean consultarSaldo(int consultarSaldo){

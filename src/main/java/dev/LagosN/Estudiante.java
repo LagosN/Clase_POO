@@ -8,17 +8,17 @@ public class Estudiante {
     private int alumnosCurso;
 
     public Estudiante(){
-        String nombre = "";
-        int curso = 0;
-        float promedio = 0;
-        int alumnosCurso = 0;
+        this.nombre = "";
+        this.curso = 0;
+        this.promedio = 0;
+        this.alumnosCurso = 0;
 
     }
     public Estudiante(String nombre, int curso, float promedio, int alumnosCurso){
-        String nombre = nombre;
-        int curso = curso;
-        float promedio = promedio;
-        int alumnosCurso = alumnosCurso;
+        this.nombre = nombre;
+        this.curso = curso;
+        this.promedio = promedio;
+        this.alumnosCurso = alumnosCurso;
 
     }
     public boolean notas(int promedio, int alumnosCurso){
