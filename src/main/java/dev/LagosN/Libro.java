@@ -3,6 +3,7 @@ package dev.LagosN;
 import java.util.ArrayList;
 
 public class Libro {
+
     private String titulo;
     private int anno;
     private String autor;
@@ -22,12 +23,11 @@ public class Libro {
         this.autor = autor;
         this.run = run ;
     }
+    Libro libro1 = new Libro("El principito", 1943, "Antoine",001);
 
-    public boolean prestamo(int run, String titulo){
+    public boolean prestamo(String prestamo){
 
-       ArrayList<String> lista= new ArrayList<>() ;
-       lista.add(titulo);
-       lista.add(run);
+        return true;
 
     }
     public boolean disponibilidad(){

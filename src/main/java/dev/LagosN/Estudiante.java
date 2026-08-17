@@ -21,6 +21,7 @@ public class Estudiante {
         this.alumnosCurso = alumnosCurso;
 
     }
+
     public boolean notas(int promedio, int alumnosCurso){
         float notas = (float) promedio/ alumnosCurso;
 

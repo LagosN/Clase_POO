@@ -4,28 +4,30 @@ public class CuentaBancaria {
     private String nombre;
     private int run;
     private int numeroCuenta;
-    private String tipoCuenta;
+    private int saldo;
 
     public CuentaBancaria(){
         this.nombre = "";
         this.run = 0;
         this.numeroCuenta = 0;
-        this.tipoCuenta = "";
+        this.saldo = 0;
     }
-    public CuentaBancaria(String nombre, int run, int numeroCuenta, String tipoCuenta){
+    public CuentaBancaria(String nombre, int run, int numeroCuenta, int saldo){
         this.nombre = nombre;
         this.run = run;
         this.numeroCuenta = numeroCuenta;
-        this.tipoCuenta = tipoCuenta;
+        this.saldo = saldo;
 
     }
-    public boolean consultarSaldo(int consultarSaldo){
-        return true;
+    public int getSaldo(){
+        return saldo;
     }
-    public boolean depositarDinero(int depositarDinero){
-        return true;
+
+    public int depositarDinero(int saldo, int numeroCuenta, int deposito){
+        int nuevoSaldo = saldo + deposito;
+        return nuevoSaldo;
     }
-    public boolean girarFondos(int girarFondos){
+    public int girarFondos(CuentaBancaria){
         return true;
     }
 }
