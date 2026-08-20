@@ -13,5 +13,7 @@ public class Curso {
         this.nombreProfesor = nombreProfesor;
     }
 
-    public int cupos()
+    public int cupos(){
+        return
+    }
 }

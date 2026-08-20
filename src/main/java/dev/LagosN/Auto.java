@@ -1,6 +1,8 @@
+
 package dev.LagosN;
 
 public class Auto {
+
     private  String modelo;
     private String marca;
     private String color;
@@ -9,17 +11,27 @@ public class Auto {
     private String tipo;
 
     public  Auto(String modelo, double km, String marca,String color, int anno, String tipo){
-        this.modelo = modelo;
+
         this.marca = marca;
         this.color = color;
         this.tipo = tipo;
         this.km = km;
+        this.anno = anno;
+        setModelo(modelo);
     }
+    /*
+    Getters y Setters
+     */
     public String getModelo(){
         return modelo;
     }
     public void setModelo(String nuevoModelo){
-        this.modelo = nuevoModelo;
+        if (nuevoModelo == null || nuevoModelo.trim().isEmpty()){
+            System.out.println("Error; El modelo no puede quedar vacío. ");}
+        else{
+
+
+            this.modelo = nuevoModelo;}
     }
     public String getMarca(){
         return marca;
@@ -30,19 +42,41 @@ public class Auto {
     public String getTipo(){
         return  tipo;
     }
+
     public int getAnno(){
         return anno;
     }
     public double getKm(){
+
         return km;
     }
+    public void estadoUso(){
+        if (this.km > 30000.0){
+            System.out.println( "Vehiculo de uso prolongado");
+        }
+        else if (this.km > 10000.0){
+            System.out.println( "Vehículo de uso medio");
+        }else{
+            System.out.println("Vehiculo de bajo uso");
+        }
+
+
+    }
+
+    /*
+    Métodos de acción
+     */
     public void avanzar(double distancia){
-     km = km + distancia;
-     System.out.println("Avanzando:" + distancia + "km. Km totales :" + km);
+        if (distancia > 0){
+
+
+        this.km = this.km + distancia;
+     System.out.println("Avanzando:" + distancia + "km. Km totales :" + km);}
     }
     public void retroceder(double distancia){
-        km = km - distancia;
-        System.out.println("Retrocediendo: " + distancia + "km. Km totales: " + km);
+        if (distancia > 0){
+        this.km = this.km - distancia;
+        System.out.println("Retrocediendo: " + distancia + "km. Km totales: " + km);}
     }
 }
 
