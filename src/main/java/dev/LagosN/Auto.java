@@ -1,6 +1,6 @@
 
 package dev.LagosN;
-
+import java.util.ArrayList;
 public class Auto {
 
     private  String modelo;
@@ -9,8 +9,9 @@ public class Auto {
     private int anno;
     private double km;
     private String tipo;
+    private String patente;
 
-    public  Auto(String modelo, double km, String marca,String color, int anno, String tipo){
+    public  Auto(String modelo, double km, String marca,String color, int anno, String tipo, String patente){
 
         this.marca = marca;
         this.color = color;
@@ -18,10 +19,19 @@ public class Auto {
         this.km = km;
         this.anno = anno;
         setModelo(modelo);
+        this.patente = patente;
+
     }
     /*
     Getters y Setters
      */
+    public void setPatente(String nuevaPatente){
+        this.patente = nuevaPatente;
+
+    }
+    public String getPatente(){
+        return  patente;
+    }
     public String getModelo(){
         return modelo;
     }

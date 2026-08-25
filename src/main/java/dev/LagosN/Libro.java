@@ -23,7 +23,7 @@ public class Libro {
         this.autor = autor;
         this.run = run ;
     }
-    Libro libro1 = new Libro("El principito", 1943, "Antoine",001);
+    Libro libro1 = new Libro("El principito", 1943, "Antoine",1);
 
     public boolean prestamo(String prestamo){
 
