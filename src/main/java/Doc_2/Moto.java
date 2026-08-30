@@ -1,6 +1,6 @@
 package Doc_2;
 
-public class Moto extends Vehiculo implements TocableBocina
+public class Moto extends Vehiculo implements TocableBocina, LuzEmergencia
 {
     private boolean tieneParabrisas;
 
@@ -15,6 +15,11 @@ public class Moto extends Vehiculo implements TocableBocina
 
     @Override
     public void desplazarse() {
+
+    }
+
+    @Override
+    public void prenderLuz() {
 
     }
 }

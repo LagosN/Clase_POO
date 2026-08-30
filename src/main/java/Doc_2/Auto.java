@@ -1,6 +1,6 @@
 package Doc_2;
 
-public class Auto extends Vehiculo implements TocableBocina {
+public class Auto extends Vehiculo implements TocableBocina, LuzEmergencia {
     private String color;
     private int cantidadPuertas;
 
@@ -36,6 +36,11 @@ public class Auto extends Vehiculo implements TocableBocina {
 
     @Override
     public void desplazarse() {
+
+    }
+
+    @Override
+    public void prenderLuz() {
 
     }
 }
